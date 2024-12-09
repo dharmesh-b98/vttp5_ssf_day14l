@@ -13,6 +13,7 @@ COPY package*.json index.js ./
 
 RUN npm install
 
+#slides put the SERVER_PORT under ENV
 ARG SERVER_PORT=3000
 
 EXPOSE ${SERVER_PORT}
